@@ -1,0 +1,13 @@
+sanic
+fastjsonschema
+casbin
+asyncio
+couchbase
+confluent_kafka
+avro-python3
+jwcrypto
+pampy
+graphene>=2.0
+json-logging
+prometheus_client
+aiohttp

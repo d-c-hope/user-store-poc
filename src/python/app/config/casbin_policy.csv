@@ -1,0 +1,29 @@
+p, persona_ext, /persona*, (GET)|(POST)|(PUT)|(DELETE)
+p, persona_all, /persona/:id/*, (GET)|(POST)|(PUT)|(DELETE)
+p, persona_read, /persona/:id/*, (GET)
+p, core_read, /coreprofile, GET
+p, core_all, profile.<id>.coreprofile, (GET)|(CREATE)|(UPDATE)|(DELETE)
+p, hhcore_all, household.<id>.corehh, (GET)|(CREATE)|(UPDATE)|(DELETE)
+p, optouts_read, /optouts, GET
+p, optouts_all, profile.<id>.optouts, (GET)|(CREATE)|(UPDATE)|(DELETE)
+p, persona_all, profile.<id>.persona.<id>.*, (GET)|(CREATE)|(UPDATE)|(DELETE)
+p, device_all, profile.<id>.device.*, (GET)|(CREATE)|(UPDATE)|(DELETE)
+p, revoke_update, revlist, (UPDATE)
+
+g, umv, core_read
+g, umv, persona_read
+
+g, sas, core_all
+g, sas, hhcore_all
+g, sas, optouts_all
+g, sas, device_all
+g, sas, persona_all
+g, sas, persona_ext
+
+g, public, persona_all
+
+g, sas_privileged, optouts_all
+g, sas_privileged, core_all
+g, sas_privileged, device_all
+
+g, id_priv, revoke_update

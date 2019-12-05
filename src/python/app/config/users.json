@@ -1,0 +1,22 @@
+{
+  "users" : {
+    "umv" : {
+      "password" : "password"
+    },
+    "sas" : {
+      "password" : "password"
+    },
+    "sas_privileged" : {
+      "password" : "password",
+      "isPrivileged" : true
+    },
+    "nowTVCRM" : {
+      "password" : "password",
+      "agentRequired" : true
+    },
+    "id_priv" : {
+      "password" : "password",
+      "isPrivileged" : true
+    }
+  }
+}
